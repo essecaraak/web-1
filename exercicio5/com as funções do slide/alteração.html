@@ -1,0 +1,21 @@
+<html >
+    <body>
+        <div id ="div">
+            <p id = "p1"> paragrafo </p>
+            <p id="p2">outro paragrafo</p>
+            <br>
+            <button onclick="muda()">mudar</button>
+        
+        </div>
+        <script type="text/javascript" >
+            function muda(){
+            var novo = document.createElement("p");
+            var texto = document.createTextNode ("novo paragrafo");
+            novo.appendChild(texto);
+            var div = document.getElementById("div");
+            var p1 = document.getElementById("p1");
+            div.replaceChild (novo,p1); 
+            }
+        </script>
+    </body>
+</html>

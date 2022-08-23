@@ -1,0 +1,24 @@
+html>
+	<head>
+		
+
+	</head>
+	<body>
+		<h1 id="h1" onclick="muda()" >web1</h1>
+		<script type="text/javascript">
+			var h1=document.querySelector('h1'); 
+			function mudamais(){
+				h1.style.color=("white");
+				h1.style.backgroundColor=("black");
+			}
+			function muda(){
+				document.getElementById('h1').innerHTML="matheus";
+				h1.addEventListener("mouseover",mudamais);
+
+
+			}
+			
+			
+		</script>
+	</body>
+</html>
